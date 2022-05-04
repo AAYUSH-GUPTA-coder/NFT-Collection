@@ -36,7 +36,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a LW3Punk!");
+      window.alert("You successfully minted a NFTPunk!");
     } catch (err) {
       console.error(err);
     }
@@ -162,15 +162,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>LW3Punks</title>
-        <meta name="description" content="LW3Punks-Dapp" />
+        <title>NFT Punks</title>
+        <meta name="description" content="NFTPunks-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to LW3Punks!</h1>
+          <h1 className={styles.title}>Welcome to NFTPunks!</h1>
           <div className={styles.description}>
-            Its an NFT collection for LearnWeb3 students.
+            Its an NFT collection for NFT Lovers.
           </div>
           <div className={styles.description}>
             {tokenIdsMinted}/10 have been minted
@@ -178,7 +178,7 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./LW3punks/1.png" />
+          <img className={styles.image} src="./LW3punks/7.png" />
         </div>
       </div>
 
